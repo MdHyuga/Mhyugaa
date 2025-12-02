@@ -9,6 +9,7 @@ body {
     margin-bottom: 10px;
     border: 20px solid white;
     color: yellow;
+#vung1 p {
     text-align:center;
     width: 100%;
     
@@ -39,6 +40,7 @@ img {
     text-align:center;
     width: 100%;
 }
+
 
 
 
