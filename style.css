@@ -5,7 +5,6 @@ div {
     padding: 20px; 
     border-style: double; 
     border-width: 8px; 
-    
     text-align: center;
 }
 
@@ -35,7 +34,6 @@ img {
     border: 70px solid black;
     color: red;
     text-align:center;
-    width: 100%;
 }
 
 #vung3 {
@@ -45,8 +43,8 @@ img {
     border: 20px solid gray;
     color:white;
     text-align:center;
-    width: 100%;
 }
+
 
 
 
