@@ -10,7 +10,13 @@ body {
     border: 20px solid white;
     color: yellow;
     text-align:center;
-    align-item:center;
+    width: 100%;
+    
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
 }
 
 #vung2 {
@@ -21,6 +27,7 @@ body {
     border: 70px solid black;
     color: red;
     text-align:center;
+    width: 100%;
 }
 
 #vung3 {
@@ -30,7 +37,9 @@ body {
     border: 20px solid gray;
     color:white;
     text-align:center;
+    width: 100%;
 }
+
 
 
 
