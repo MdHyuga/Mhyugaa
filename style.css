@@ -9,12 +9,7 @@ body {
     margin-bottom: 10px;
     border: 20px solid white;
     color: yellow;
-    text-align:center;
-img {
-    left: auto;
-    top: auto;
-    max-height: auto;
-    
+    align-item:center;
 }
 
 #vung2 {
@@ -33,6 +28,7 @@ img {
     border: 20px solid gray;
     color:white;
 }
+
 
 
 
