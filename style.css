@@ -1,6 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+div {
+    width: 70%; 
+    margin: 30px auto; 
+    padding: 20px; 
+    border-style: double; 
+    border-width: 8px; 
+    
+    text-align: center;
 }
 
 #vung1 {
@@ -14,10 +20,11 @@ body {
     width: 100%;
     
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 10px;
+     max-width: 90%; 
+    height: auto; 
+    margin-top: 15px; 
+    border: 3px dotted #6c757d; 
+    border-radius: 5px;
 }
 
 #vung2 {
@@ -40,6 +47,7 @@ img {
     text-align:center;
     width: 100%;
 }
+
 
 
 
