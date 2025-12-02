@@ -19,6 +19,7 @@ body {
     margin-bottom: 10px;
     border: 70px solid black;
     color: red;
+     align-item:center;
 }
 
 #vung3 {
@@ -27,7 +28,9 @@ body {
     padding: 15px;
     border: 20px solid gray;
     color:white;
+     align-item:center;
 }
+
 
 
 
