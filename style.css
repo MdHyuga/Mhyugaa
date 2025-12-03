@@ -10,7 +10,7 @@ div {
 
 #vung1 {
     background-color: yellow;
-    border: 20px solid white;
+    border: 20px;
     color: yellow;
 #vung1 p {
     text-align:center;
@@ -25,19 +25,11 @@ img {
 
 #vung2 {
     background-color: lightblue; 
-    color: darkblue;
-    border: 70px solid black;
+    border: 70px;
     color: red;
     text-align:center;
 }
 
-#vung3 {
-    background-color: lightcoral; 
-    color: #333;
-    border: 20px solid gray;
-    color:white;
-    text-align:center;
-}
 
 
 
