@@ -15,13 +15,6 @@ div {
 #vung1 p {
     text-align:center;
     width: 100%;
-    
-img {
-     max-width: 70%; 
-    height: auto; 
-    border: 3px dotted #6c757d; 
-    border-radius: 5px;
-}
 
 #vung2 {
     background-color: lightblue; 
@@ -29,6 +22,19 @@ img {
     color: red;
     text-align:center;
 }
+#vung2 {
+    background-color: dark; 
+    border: 70px;
+    color: pink;
+    text-align:center;
+}
+img {
+     max-width: 70%; 
+    height: auto; 
+    border: 3px dotted #6c757d; 
+    border-radius: 5px;
+}
+
 
 
 
