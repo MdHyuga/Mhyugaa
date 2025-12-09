@@ -12,10 +12,7 @@ div {
     background-color: yellow;
     border: 20px;
     color: yellow;
-#vung1 p {
-    text-align:center;
-    width: 100%;
-
+}
 #vung2 {
     background-color: lightblue; 
     border: 70px;
@@ -31,11 +28,50 @@ div {
     box-sizing: border-box;
 }
 img {
-     max-width: 70%; 
-    height: auto; 
-    border: 3px dotted #6c757d; 
-    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
 }
+    
+/* Đảm bảo nội dung chữ của thanh điều hướng cũng được căn giữa */
+#vung1 p {
+     text-align: center;
+     width: 100%;
+}
+
+/* Kiểu cho các liên kết điều hướng (Tạo hiệu ứng ô Excel) */
+.nav-links a {
+    /* Đóng khung riêng lẻ và viền rõ ràng */
+    border: 1px solid yellow; 
+    padding: 8px 15px; 
+    
+    /* Dính liền nhau (như ô Excel) */
+    margin: 0; 
+    border-radius: 0; 
+    
+    /* Thiết lập hiển thị */
+    display: inline-block; 
+    text-decoration: none; 
+    color: yellow; 
+    background-color: #004d40; 
+    transition: background-color 0.3s; 
+}
+
+/* Xử lý viền để các ô liền kề viền đơn */
+.nav-links a + a {
+    border-left-width: 0;
+}
+
+
+/* Kiểu khi di chuột vào (Hover effect) */
+.nav-links a:hover {
+    background-color: #006064; 
+}
+    
+
+    
+
 
 
 
