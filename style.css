@@ -1,39 +1,52 @@
 body {
-div {
-    width: 70%; 
-    margin: 30px auto; 
-    padding: 20px; 
-    border-style: double; 
-    border-width: 8px; 
-    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
+/* Vùng 1: Nền xám, chữ đen, viền đỏ (20px) - Dùng Flexbox để căn giữa */
 #vung1 {
-    background-color: yellow;
-    border: 20px;
-    color: yellow;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    
+    background-color: gray; 
+    color: dark; 
+    border: 20px solid red; 
+    
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
 }
+
+/* Vùng 2: Nền xanh trời, chữ tím, viền hồng (70px) */
 #vung2 {
-    background-color: lightblue; 
-    border: 70px;
-    color: red;
-    text-align:center;
+    background-color: light blue; 
+    color: purple; 
+    border: 70px solid pink; 
+    
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
+
+/* Vùng 3: Nền trắng, chữ xanh biển đậm, viền đen (20px) */
 #vung3 {
-    background-color: #d1c4e9; 
-    color: darkorange; 
+    background-color: white; 
+    color: dark blue; 
     border: 20px solid black; 
     
     padding: 15px;
     box-sizing: border-box;
 }
+
+/* Quy tắc BẮT BUỘC để ảnh co dãn linh hoạt (responsive) */
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin-top: 10px;
 }
-    
+
 /* Đảm bảo nội dung chữ của thanh điều hướng cũng được căn giữa */
 #vung1 p {
      text-align: center;
@@ -68,25 +81,47 @@ img {
 .nav-links a:hover {
     background-color: #006064; 
 }
-    
 
-    
+/* ========================================= */
+/* QUY TẮC ĐÓNG KHUNG FORM MỚI THÊM */
+/* ========================================= */
 
+/* Đóng khung cho toàn bộ Form trong Vùng 2 */
+.form-khung {
+    border: 3px solid purple; /* Viền màu vàng dày 3px */
+    padding: 20px; /* Tạo không gian bên trong khung */
+    margin-top: 15px; /* Khoảng cách với Bảng điểm */
+    border-radius: 8px; /* Bo tròn góc nhẹ */
+    /* Đảm bảo text bên trong khung vẫn là màu tím của Vùng 2 */
+    color: purple; 
+}
 
+/* Tối ưu hiển thị input, select và button trên nền xanh trời */
+.form-khung input[type="text"],
+.form-khung input[type="email"],
+.form-khung select {
+    color: black; 
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 3px;
+    width: 200px; /* Cố định chiều rộng cho dễ nhìn */
+}
 
+.form-khung button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+.form-khung button[type="submit"] {
+    background-color: #ffc107; /* Màu vàng cam cho Đăng nhập */
+    color: #333;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form-khung button[type="button"] {
+    background-color: #e53935; /* Màu đỏ cho Thoát */
+    color: white;
+}
