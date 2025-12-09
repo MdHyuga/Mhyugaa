@@ -23,10 +23,12 @@ div {
     text-align:center;
 }
 #vung3 {
-    background-color: dark; 
-    border: 70px;
-    color: pink;
-    text-align:center;
+    background-color: #d1c4e9; 
+    color: darkorange; 
+    border: 20px solid black; 
+    
+    padding: 15px;
+    box-sizing: border-box;
 }
 img {
      max-width: 70%; 
@@ -34,6 +36,7 @@ img {
     border: 3px dotted #6c757d; 
     border-radius: 5px;
 }
+
 
 
 
