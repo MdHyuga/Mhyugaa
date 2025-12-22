@@ -28,7 +28,7 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 40px;
 }
 
 /* Cấu hình cột: Mặc định 4 cột trên màn hình máy tính (25%) */
