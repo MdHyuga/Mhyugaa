@@ -41,7 +41,7 @@ body {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
+    width: 25%;
     
     /* Hiệu ứng trắng đen như trong ảnh mẫu bạn gửi */
     filter: grayscale(100%);
