@@ -1,61 +1,59 @@
-/*
-   FILE: style.css
-   Mục đích: Tạo giao diện sidenav cố định (fixed) và full-height.
-*/
+* {
+    box-sizing: border-box;
+}
 
-/* --- 1. Thiết lập cơ bản --- */
 body {
-    margin: 0; /* Xóa margin mặc định */
-    font-family: Arial, sans-serif;
-    line-height: 1.5; /* Điều chỉnh khoảng cách dòng */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
 }
 
-/* --- 2. Định dạng cho Thanh Điều hướng Bên (Sidenav) --- */
-.sidenav {
-    height: 100%; /* Chiều cao đầy đủ của viewport */
-    width: 200px; /* Chiều rộng cố định */
-    position: fixed; /* Cố định vị trí, không cuộn theo trang */
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #000; /* Màu nền đen tuyệt đối */
-    overflow-x: hidden; 
-    padding-top: 20px; /* Khoảng đệm trên */
-    box-sizing: border-box; 
+.header {
+    text-align: center;
+    padding: 32px;
 }
 
-/* Định dạng cho các liên kết (Link) trong sidenav */
-.sidenav a {
-    /* Điều chỉnh padding để giống với ảnh: khoảng đệm trên/dưới lớn hơn */
-    padding: 15px 16px; 
-    text-decoration: none; 
-    font-size: 18px; 
-    color: #f1f1f1; /* Màu chữ trắng/sáng */
-    display: block; 
+/* Container for the flexbox grid */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sit next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    /* Grayscale effect as seen in your reference image */
+    filter: grayscale(100%);
     transition: 0.3s;
 }
 
-/* Hiệu ứng hover cho các liên kết */
-.sidenav a:hover {
-    color: #fff;
-    /* Có thể thêm background-color: #333; nếu muốn hiệu ứng hover màu nền */
+/* Restore color on hover */
+.column img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
 }
 
-/* --- 3. Định dạng cho Khu vực Nội dung Chính (Content) --- */
-.content {
-    /* Đẩy nội dung chính sang phải bằng với chiều rộng của sidenav */
-    margin-left: 200px;
-    padding: 1px 20px; /* Khoảng đệm xung quanh nội dung */
+/* Responsive layout: 2 columns on screens less than 800px wide */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
-/* Định dạng cho tiêu đề và đoạn văn trong nội dung */
-.content h2 {
-    color: #333; 
-    font-size: 32px; /* Điều chỉnh kích thước tiêu đề */
-    margin-top: 40px; /* Khoảng cách từ đỉnh trang */
-}
-
-.content p {
-    color: #555;
-    font-size: 16px;
+/* Responsive layout: 1 column on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
