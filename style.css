@@ -33,15 +33,15 @@ body {
 
 /* Cấu hình cột: Mặc định 4 cột trên màn hình máy tính (25%) */
 .column {
-    flex: 25%;
-    max-width: 25%;
+    flex: 30%;
+    max-width: 30%;
     padding: 0 40px;
 }
 
 .column img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 25%;
+    width: 30%;
     
     /* Hiệu ứng trắng đen như trong ảnh mẫu bạn gửi */
     filter: grayscale(100%);
