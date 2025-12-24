@@ -1,101 +1,66 @@
-/* Đảm bảo trình duyệt tính toán kích thước chuẩn bao gồm cả viền và khoảng cách */
+/* Reset định dạng cơ bản của trình duyệt */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff; /* Nền trắng sạch sẽ */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Phần tiêu đề */
-.header {
-    text-align: center;
-    padding: 32px;
+/* Định dạng thanh Menu (Navbar) */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
 }
 
-.header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.header p {
-    color: #666;
-}
-
-/* Hàng chứa các cột ảnh */
-.row {
+.navbar ul {
+    list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 40px;
 }
 
-/* Cấu hình cột: Mặc định 4 cột trên màn hình máy tính (25%) */
-.column {
-    flex: 30%;
-    max-width: 30%;
-    padding: 0 40px;
+.navbar ul li {
+    margin-right: 25px;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 30%;
-    
-    /* Hiệu ứng trắng đen như trong ảnh mẫu bạn gửi */
-    filter: grayscale(100%);
-    
-    /* Hiệu ứng chuyển cảnh mượt mà */
-    transition: 0.3s ease;
-    border-radius: 2px; /* Bo góc cực nhẹ cho tinh tế */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Hiệu ứng khi di chuột vào ảnh: hiện màu và nổi bật hơn */
-.column img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.02); /* Phóng to nhẹ 2% */
-    cursor: pointer;
+.navbar ul li a:hover {
+    color: #ccc;
 }
 
-/* --- Responsive Layout (Tính phản hồi) --- */
-
-/* Màn hình máy tính bảng (Dưới 800px): Hiển thị 2 cột (50%) */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
+/* Định dạng bố cục 3 cột dùng Flexbox */
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Khoảng cách giữa các cột */
 }
 
-/* Màn hình điện thoại (Dưới 600px): Hiển thị 1 cột duy nhất (100%) */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-    
-    .header h1 {
-        font-size: 30px; /* Thu nhỏ chữ tiêu đề trên điện thoại */
-    }
-}
-.column img:hover {
-    filter: grayscale(0%);
-    cursor: pointer;
+/* Hai cột bên (Side) */
+.side-column {
+    flex: 1; /* Chiếm 1 phần không gian */
 }
 
-/* Responsive layout: 2 columns on screens less than 800px wide */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
+/* Cột chính ở giữa (Main Content) */
+.main-content {
+    flex: 2; /* Chiếm 2 phần không gian (rộng gấp đôi cột bên) */
 }
 
-/* Responsive layout: 1 column on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
+/* Định dạng tiêu đề */
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Responsive: Khi màn hình nhỏ (điện thoại), các cột sẽ xếp chồng lên nhau */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
     }
 }
