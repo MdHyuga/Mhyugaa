@@ -1,96 +1,70 @@
-/* Thiết lập cơ bản cho trang */
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f1f1f1;
+* Thiết lập cơ bản */
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Khung bao ngoài sử dụng Flexbox để chia cột */
+.container {
     display: flex;
-    justify-content: center;
+    border: 1px solid #000; /* Viền ngoài cùng như trong ảnh */
+    width: 800px;
+    margin: 20px auto;
+    min-height: 400px;
 }
 
-/* Khung thẻ chính (Card) */
-.card {
-    background-color: white;
-    width: 100%;
-    max-width: 900px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
-    margin-bottom: 20px;
+/* Cột bên trái (Sidebar) */
+.sidebar {
+    width: 30%;
+    background-color: #f0f0f0; /* Màu nền xám nhạt */
+    border-right: 1px solid #ccc;
 }
 
-/* Hình ảnh */
-.card-image {
-    width: 100%;
-    height: auto;
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 10px 15px;
+}
+
+/* Mục đang được chọn (Trang chủ) */
+.sidebar ul li.active {
+    background-color: #888; /* Màu xám đậm */
+}
+
+.sidebar ul li.active a {
+    color: white;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
     display: block;
 }
 
-/* Phần nội dung chữ */
-.container {
-    padding: 20px;
+/* Cột bên phải (Nội dung chính) */
+.content {
+    width: 70%;
+    padding: 20px 40px;
+    background-color: #fff;
 }
 
-/* Tiêu đề */
-h2 {
+.content h1 {
     font-size: 24px;
-    margin: 10px 0;
-    text-transform: uppercase;
-    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-/* Mô tả tiêu đề (Ngày tháng) */
-.title-desc {
-    font-size: 16px;
-    margin: 10px 0 20px 0;
+.content h3 {
+    margin-bottom: 15px;
 }
 
-.title-desc span {
-    color: #757575;
+.content ol {
+    margin-left: 20px;
 }
 
-/* Đoạn văn */
-p {
-    line-height: 1.5;
-    margin-bottom: 25px;
-    font-size: 15px;
-}
-
-/* Phần chân (Nút bấm và Comments) */
-.footer-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-}
-
-/* Nút Read More */
-.btn-read-more {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-}
-
-.btn-read-more:hover {
-    background-color: #ccc;
-}
-
-/* Phần Comments */
-.comments {
-    font-size: 15px;
-    color: black;
-}
-
-/* Số 0 trong ô đen */
-.badge {
-    background-color: black;
-    color: white;
-    padding: 3px 10px;
-    margin-left: 5px;
-    border-radius: 0;
+.content ol li {
+    margin-bottom: 5px;
 }
